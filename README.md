@@ -1,14 +1,20 @@
 <h1><img src="converse_logo.jpg"></h1><br><br>
 
-<b>Converse is a forum based web application currently in production</p>
+<h2>Progress Report</h2>
+<p><b>Converse is a forum based web application currently in production</b></p>
 
 <p>
   So far everything is almost done on the backend; however, judging from the pictures below we need to work on the front-end of the site. 
 </p>
-
 <p>
   We plan to do this by improving the UI/UX of the app by using existing web responsive frameworks, or building it from scratch ourselves.
 </p>
+
+<h2>Getting Started</h2>
+<p>When deploy the site either on heroku or digital ocean. Please create an account, share your post on social media, and bookmark us. We want our application to benefit the users as much as us, so we're re-thinking our strategy on how users will interact on our application.</p>
+
+<h2>Contributing</h2>
+<p>When we upload the project Restful API, we appreciate all contributions to Converse</p>
 
 <h2>The following are screenshoots of homepage and user profile</h2>
 
