@@ -1,0 +1,8 @@
+<div class="post-wrapper">
+	<h1>Total amount of post created by users: <b><%= @posts.count %></b></h1><br>
+	<% @posts.each do |post| %>
+		<div class="div-heading">
+			<h2><%= link_to post.title, post %></h2>
+		</div>
+	<% end %>
+</div>	

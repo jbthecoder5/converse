@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Converse</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+  <name name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<% if notice %>
+<div class="alert alert-success"><%= notice %></div>
+<% end %>
+<% if alert %>
+<div class="alert alert-danger"><%= alert %></div>
+<% end %>
+<nav class="nav-header">
+	<ul>
+		<li><h1>Converse</h1></li>
+		<li><a href="<%= root_path %>">Home</a></li>
+		<li><a href="<%= posts_path %>">Posts</a></li>
+		<li><a href="<%= members_path %>">Members</a></li>
+		<li class="input-text">Search: <input type="search"></li>
+		<li>
+		<% if current_user %>
+		<%= link_to 'Log Out', logout_path %>
+		<%= link_to 'Profile', profile_path %>
+		<% else %>
+		<%= link_to 'Log In', login_path %> or
+		<%= link_to 'Sign Up', signup_path %>
+		<% end %>
+		</li>
+	</ul>
+	
+</nav>
+
+<%= yield %>
+
+</body>
+</html>
+
+
+

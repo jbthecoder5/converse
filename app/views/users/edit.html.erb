@@ -1,0 +1,19 @@
+<%= form_for(@user) do |f| %>
+	
+	<div class="form-group">
+		<%= f.label :name %>
+		<%= f.text_field :name, :value => @user.name,
+		 class: "form-control" %>
+	</div>
+	<div class="form-group">
+		<%= f.label :email %>
+		<%= f.email_field :email, :value => @user.email, 
+			class: "form-control" %>
+	</div>
+	<div class="form-group">
+		<%= f.label :password %>
+		<%= f.password_field :password, :value => @user.password,
+			class: "form-control" %>
+	</div>
+	<%= f.submit "Update Account", class: "btn btn-primary" %>
+<% end %>
