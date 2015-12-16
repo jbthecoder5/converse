@@ -36,15 +36,6 @@ class UsersController < ApplicationController
 		@user = User.find_by_id(session[:current_user_id])
 	end
 
-	def view_profile
-		@user = User.find_by_id(params[:id])
-		if @user.exist?
-
-		else
-			render: "404"
-		end
-	end
-
 	def update
 		@user = User.find(params[:id])
 		@user.update_attributes(params.require(:user).permit(:name,:email,:password))
