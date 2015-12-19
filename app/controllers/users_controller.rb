@@ -47,6 +47,12 @@ class UsersController < ApplicationController
 		end
 	end
 
+	def destroy
+		@user = User.find_by_id(session[:current_user_id]).destroy
+		session[:current_user_id] = nil
+		redirect_to root_url, notice: 'Account successfully deactivated, you will be missed :('
+	end
+
 
 	private
 

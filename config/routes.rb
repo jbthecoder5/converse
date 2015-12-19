@@ -10,9 +10,11 @@ Rails.application.routes.draw do
   get 'createPost', to: 'posts#new', as: 'createPost'
   get 'members', to: 'users#show', as: 'members'
   get 'allPosts', to: 'posts#index', as: 'allPosts'
+  get 'profile/delete' => 'users#destroy'
 
 
   root 'users#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
