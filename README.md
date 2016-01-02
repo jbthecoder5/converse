@@ -1,7 +1,7 @@
 <h1><img src="converse_logo.jpg"></h1><br><br>
 
 <h2>Progress Report</h2>
-<p><b>Converse is a forum based web application that allows users to create posts, monetize from their posts, and donate via Bitcoin or paypal to other users.</b></p>
+<p><b>Converse is a ruby on rails web application that allows users to create a post and comment on post. Much like a forum-based web application, but with a twist. Users will be able to monetize from their posts, and donate via Bitcoin or paypal to other users. In Addition, created post that receive monetization awards will be split and allocated to post creator and users who commented on post.</b></p>
 
 <p>
   So far everything is almost completed on the backend; however, judging from the pictures below we need to improve the front-end of the site. 
