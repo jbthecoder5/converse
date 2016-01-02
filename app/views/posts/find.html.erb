@@ -1,0 +1,7 @@
+<h1>Search Results:</h1>
+
+<%= @posts.each do |posts| %>
+	<div id="post-wrapper">
+		<p><%= link_to posts.title, posts %></p>
+	</div>
+<% end %>

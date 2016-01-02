@@ -7,12 +7,15 @@ class PostsController < ApplicationController
 	def new
 		@post = Post.new
 		@user = User.find_by_id(session[:current_user_id])
-
 	end
 
 	def show
-		@user = User.find(params[:id])
-		@posts = @user.posts
+		@post = Post.find(params[:id])
+	end
+
+	def find
+		@posts = Post.where("title = ? OR body = ?",
+			params[:search_string], params[:search_string])
 	end
 
 	def create
@@ -25,14 +28,24 @@ class PostsController < ApplicationController
 		end
 	end
 
-	def edit
+	def show_user_posts
+		@users = User.find(params[:id])
+		if(@users.exist?)
+			if(@users.find_by_id(:current_user_id)) 
+
+			end
+		end
 
 	end
 
-	def update
+	def destroy_user_posts
+		@user = User.find(params[:id])
+		if(@user.exist? == false)
+			@user.posts.destroy 
+		end
 
+		
 	end
-
 
 	private
 

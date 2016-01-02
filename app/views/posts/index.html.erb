@@ -1,0 +1,5 @@
+	<% @posts.each do |post| %>
+		<div id="post-wrapper">
+			<%= link_to post.title, post %>
+		</div>
+	<% end %>

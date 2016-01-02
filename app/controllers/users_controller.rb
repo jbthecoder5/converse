@@ -8,16 +8,6 @@ class UsersController < ApplicationController
 		@users = User.all
 	end
 
-=begin 
-	// The purpose of this method is to find created post of the user
-	However, I'am having trouble doing this and will look for an alternative solution.
-	
-	def posts
-	    @user = User.find(params[:id]
-	    @posts = @user.posts
-	end
-=end 
-
 	def new
 		@user = User.new
 	end
@@ -31,6 +21,11 @@ class UsersController < ApplicationController
 			render "new"
 		end
 	end
+
+=begin	def findUser
+		
+	end
+=end
 
 	def edit
 		@user = User.find_by_id(session[:current_user_id])

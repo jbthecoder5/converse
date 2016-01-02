@@ -1,7 +1,7 @@
 <h1><img src="converse_logo.jpg"></h1><br><br>
 
 <h2>Progress Report</h2>
-<p><b>Converse is a forum based web application currently in production</b></p>
+<p><b>Converse is a forum based web application that allows users to create posts, monetize from their posts, and donate via Bitcoin or paypal to other users.</b></p>
 
 <p>
   So far everything is almost completed on the backend; however, judging from the pictures below we need to improve the front-end of the site. 

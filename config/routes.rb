@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :users
-  resources :posts
+  resources :posts do
+    resources :comments, only: :create
+  end
   resources :sessions
 
   get 'signup', to: 'users#new', as: 'signup'
@@ -11,6 +13,7 @@ Rails.application.routes.draw do
   get 'members', to: 'users#show', as: 'members'
   get 'allPosts', to: 'posts#index', as: 'allPosts'
   get 'profile/delete' => 'users#destroy'
+  post 'posts/find' => 'posts#find'
 
 
   root 'users#index'
