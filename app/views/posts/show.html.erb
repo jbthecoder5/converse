@@ -5,14 +5,21 @@
 	<h2>Comments</h2>
 	<%= render @post.comments %>
 
-	<h4>New Comment</h4>
+	<% if current_user %>
+		<h4>New Comment</h4>
 
-	<%= form_for [@post, @post.comments.build] do |f| %>
-		<div class='field'>
-			<%= f.label :body %><br>
-			<%= f.text_area :body %>
-		</div>
-			<div class='actions'>
-			<%= f.submit %>
-		</div>
+		<%= form_for [@post, @post.comments.build] do |f| %>
+			<div class="form-group">
+				<%= f.label :name %>
+				<%= f.text_field :name, :value => @user.name,
+				 class: "form-control" %>
+			</div>
+			<div class='field'>
+				<%= f.label :body %><br>
+				<%= f.text_area :body %>
+			</div>
+				<div class='actions'>
+				<%= f.submit %>
+			</div>
+		<% end %>
 	<% end %>

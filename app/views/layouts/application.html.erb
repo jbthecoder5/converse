@@ -20,7 +20,9 @@
   <ul>
     <li><h1>Converse</h1></li>
     <li><a href="<%= root_path %>">Home</a></li>
-    <li><a href="<%= posts_path %>">Posts</a></li>
+    <% if current_user %>
+     <li><a href="<%= posts_path %>">Posts</a></li>
+    <% end %>
     <li><a href="<%= members_path %>">Members</a></li>
     <li class="input-text">
       <%= form_tag "/posts/find" do %>
