@@ -9,10 +9,9 @@
 		<h4>New Comment</h4>
 
 		<%= form_for [@post, @post.comments.build] do |f| %>
-			<div class="form-group">
-				<%= f.label :name %>
-				<%= f.text_field :name, :value => @user.name,
-				 class: "form-control" %>
+			<div class='field'>
+				<%= f.label :author %><br>
+				<%= f.text_field :author, :value => @user.name, :readonly => true %>
 			</div>
 			<div class='field'>
 				<%= f.label :body %><br>
