@@ -5,10 +5,9 @@
 		</head>
 
 		<body>
-			<div class="site-container">
-				
-				<div class="content-holder">
-					<section class="col">
+			
+					<div class="site-wrap">
+						<div class="welcome-holder">
 							<% if current_user %>
 							<div class="div-message">Post Created: <%= @posts.count %></div>
 							<div class="div-message">Registered Users: <%= @users.count %></div>
@@ -21,8 +20,7 @@
 					
 							<div class="div-message"><a href="<%= login_path %>">Login</a></div>
 							<% end %>
-					</section>
-				</div>
-			</div>
+						</div>
+					</div>
 		</body>	
 	</html>
