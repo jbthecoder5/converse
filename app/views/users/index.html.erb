@@ -5,22 +5,34 @@
 		</head>
 
 		<body>
-			
-					<div class="site-wrap">
-						<div class="welcome-holder">
-							<% if current_user %>
-							<div class="div-message">Post Created: <%= @posts.count %></div>
-							<div class="div-message">Registered Users: <%= @users.count %></div>
-							<div class="div-message"><a href="<%= createPost_path %>">Create a Post</a></div>
-							<% else %>
-							<div class="div-message">Post Created: <%= @posts.count %></div>
-							<div class="div-message">Registered Users: <%= @users.count %></div>
-							
-							<div class="div-message"><a href="<%= signup_path %>">Sign Up</a></div>
-					
-							<div class="div-message"><a href="<%= login_path %>">Login</a></div>
-							<% end %>
-						</div>
-					</div>
+			<div class="site-wrap">
+				<div class="site-wrapper">
+					<div class="site-wrapper-inner">
+						<div class="cover-container">
+						    <div class="inner cover">
+			            		<h1 class="cover-heading">Converse</h1>
+			            		<p class="lead">A anonymous disccusion forum for like-minded individuals.</p>
+			      				<p class ="lead">
+			            			<% if current_user %>
+						           		<a href="#" class="btn btn-lg btn-default">Post Created: <%= @posts.count %></a>
+										<a href="#" class="btn btn-lg btn-default">Registered Users: <%= @users.count %></a>
+										<a href="<%= createPost_path %>" class="btn btn-lg btn-default">Create a Post</a>
+									<% else %>
+										<a href="#" class="btn btn-lg btn-default">Post Created: <%= @posts.count %></a>
+										<a href="#" class="btn btn-lg btn-default">Registered Users: <%= @users.count %></a>
+										<a href="<%= signup_path %>" class="btn btn-lg btn-default">Sign Up</a>
+										<a href="<%= login_path %>" class="btn btn-lg btn-default">Login</a>         
+			             			<% end %>
+			          			 </p>
+			          		</div>
+							<div class="mastfoot">
+			            	<div class="inner">
+
+			               </div>
+			               </div>
+				        </div>
+					 </div>
+				</div>
+			</div>
 		</body>	
 	</html>
