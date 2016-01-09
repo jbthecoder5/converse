@@ -16,14 +16,14 @@
 <h2>Contributing</h2>
 <p>You can contribute towards the project on github, or contact us because we will be on the lookout for hiring mobile app engineer to produce iphone/android app for our app.</p>
 
-<h2>The following are screenshoots of homepage and user profile (Note: These picture are gonna change very soon).</h2>
+<h2>The following are screenshoots of homepage has been updated as of Jan, 8, 2016. The old picture are still in directory.</h2>
 
 <p>
-    <a href="1.png"><img src="1.png" width="200" height ="200"></a>
-    <a href="2.png"><img src="2.png" width="200" height ="200"></a>
-    <a href="3.png"><img src="3.png" width="200" height ="200"></a>
-    <a href="4.png"><img src="4.png" width="200" height ="200"></a>
-    <a href="5.png"><img src="5.png" width="200" height ="200"></a>
+    <a href="beta-pics/1.png"><img src="beta-pics/1.png" width="200" height ="200"></a>
+    <a href="beta-pics/2.png"><img src="beta-pics/2.png" width="200" height ="200"></a>
+    <a href="beta-pics/3.png"><img src="beta-pics/3.png" width="200" height ="200"></a>
+    <a href="beta-pics/4.png"><img src="beta-pics/4.png" width="200" height ="200"></a>
+    
 </p>
 
 

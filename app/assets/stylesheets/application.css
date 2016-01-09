@@ -12,10 +12,7 @@
  *
  */
 @import "bootstrap";
-@import "users";
-@import "sessions";
 @import 'main';
-@import 'cover';
 @import 'navigation';
 
 

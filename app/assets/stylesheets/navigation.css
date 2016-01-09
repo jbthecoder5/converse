@@ -45,7 +45,7 @@
   /* Critical position and size styles */
   min-height: 100%;
   min-width: 100%;
-  background-color:white; /* Needs a background or else the nav will show through */
+  background:url('grassy-lands.jpg'); /* Needs a background or else the nav will show through */
   position: relative;
   top: 0;
   bottom: 100%;
@@ -55,9 +55,16 @@
   /* non-critical apperance styles */
   padding: 4em;
   
-  background-size: 200%;
+  background-size: 100% 100%;
+  background-origin:contain;
 }
 
+.search-box
+{
+  margin-top:20px;
+  margin-bottom: 10px;
+  width:50%;
+}
 
 .nav-trigger {
   /* critical styles - hide the checkbox input */
@@ -113,3 +120,37 @@ code {
 /* Micro reset */
 *,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
 html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+
+
+
+.smi
+{
+  margin-top:100px;
+}
+
+.social-media-icons1
+{
+  background-image: url('facebook.png');
+  background-repeat: no-repeat;
+  width:100px;
+  height:100px;
+ 
+}
+
+.social-media-icons2
+{
+  background-image: url('twitter.png');
+  width:100px;
+  height:100px;
+  background-repeat: no-repeat;
+}
+
+.social-media-icons3
+{
+  background-image: url('youtube.png');
+  width:100px;
+  height:100px;
+  background-repeat: no-repeat;
+ 
+}
