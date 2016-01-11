@@ -11,12 +11,12 @@
 			            		<p class="lead">A anonymous disccusion forum for like-minded individuals.</p>
 			      				<p class ="lead">
 			            			<% if current_user %>
-						           		<a href="#" class="btn btn-lg btn-default">Post Created: <%= @posts.count %></a>
-										<a href="#" class="btn btn-lg btn-default">Registered Users: <%= @users.count %></a>
+						           		<button class="btn btn-lg btn-default">Post Created: <%= @posts.count %></button>
+										<button class="btn btn-lg btn-default">Registered Users: <%= @users.count %></button>
 										<a href="<%= createPost_path %>" class="btn btn-lg btn-default">Create a Post</a>
 									<% else %>
-										<a href="#" class="btn btn-lg btn-default">Post Created: <%= @posts.count %></a>
-										<a href="#" class="btn btn-lg btn-default">Registered Users: <%= @users.count %></a>
+										<button class="btn btn-lg btn-default">Post Created: <%= @posts.count %></button>
+										<button class="btn btn-lg btn-default">Registered Users: <%= @users.count %></button>
 										<a href="<%= signup_path %>" class="btn btn-lg btn-default">Sign Up</a>
 										<a href="<%= login_path %>" class="btn btn-lg btn-default">Login</a>         
 			             			<% end %>

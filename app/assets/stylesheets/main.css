@@ -186,14 +186,3 @@ p .div-message
 */
 
 
-
-.top-banner
-{
-    background:url('beta-pic.png');
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    background-origin: contain;
-    margin-bottom:20px;
-    width:200px;
-    height:100px;
-}

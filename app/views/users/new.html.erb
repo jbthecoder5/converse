@@ -6,7 +6,8 @@
 		</head>
 
 		<body>
-		<div class="site-wrap">
+		<div class="page-wrap">
+		<div class="center-form">
 		<%= form_for(@user) do |f| %>
 			<% if @user.errors.any? %>
 				<div class="alert alert-danger">
@@ -43,5 +44,8 @@
 			</p>
 		<% end %>
 		</div>
+		</div>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger"></label>
 		</body>
 	</html>

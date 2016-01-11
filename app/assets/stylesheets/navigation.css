@@ -59,6 +59,23 @@
   background-origin:contain;
 }
 
+.page-wrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background:green; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  
+  /* non-critical apperance styles */
+  padding: 4em;
+  
+  background-size: 100% 100%;
+  background-origin:contain;
+}
 .search-box
 {
   margin-top:20px;
@@ -91,11 +108,20 @@ label[for="nav-trigger"] {
   transition: left 0.2s;
 }
 
+.nav-trigger + label, .page-wrap {
+  transition: left 0.2s;
+}
+
 .nav-trigger:checked + label {
   left: 215px;
 }
 
 .nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.nav-trigger:checked ~ .page-wrap {
   left: 200px;
   box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
 }
@@ -121,6 +147,20 @@ code {
 *,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
 html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
 
+
+
+
+
+.top-banner
+{
+    background:url('beta-pic.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-origin: contain;
+    margin-bottom:20px;
+    width:200px;
+    height:100px;
+}
 
 
 
