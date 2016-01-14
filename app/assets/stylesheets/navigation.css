@@ -63,7 +63,7 @@
   /* Critical position and size styles */
   min-height: 100%;
   min-width: 100%;
-  background:green; /* Needs a background or else the nav will show through */
+  background:#92D008; /* Needs a background or else the nav will show through */
   position: relative;
   top: 0;
   bottom: 100%;

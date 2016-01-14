@@ -186,3 +186,39 @@ p .div-message
 */
 
 
+.social-icons
+{
+   
+}
+
+
+
+.smi1
+{
+    background:url("facebook-icon.png");
+    background-repeat: no-repeat;
+    width:32px;
+    height:32px;
+    float:left;
+    margin-right:30px;
+    margin-left:15px;
+}
+
+.smi2
+{
+    background:url("twitter-icon.png");
+    background-repeat: no-repeat;
+    width:32px;
+    height:32px;
+    float:left;
+    margin-right:30px;
+}
+
+.smi3
+{
+    background:url("youtube-icon.png");
+    background-repeat: no-repeat;
+    width:32px;
+    height:32px;
+    float:left;
+}
