@@ -11,12 +11,12 @@
   
 </head>
 <body>
-<% if notice %>
-<div class="alert alert-success"><%= notice %></div>
-<% end %>
-<% if alert %>
-<div class="alert alert-danger"><%= alert %></div>
-<% end %>
+  <% if notice %>
+    <div class="notice notice-success"><%= notice %></div>
+  <% end %>
+  <% if alert %>
+    <div class="notice notice-danger"><%= alert %></div>
+  <% end %>
   <ul class="navigation">
     <li class="nav-item"><img class="top-banner"></li>
     <li class="nav-item"><a href="<%= root_path %>">Home</a></li>
@@ -44,7 +44,6 @@
   
   <input type="checkbox" id="nav-trigger" class="nav-trigger" />
   <label for="nav-trigger"></label>
-
 
 <%= yield %>
 

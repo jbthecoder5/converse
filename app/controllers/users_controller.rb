@@ -36,7 +36,7 @@ class UsersController < ApplicationController
 		@user.update_attributes(params.require(:user).permit(:name,:email,:password))
 
 		if @user.save
-			redirect_to root_url, notice: 'Your account has been updated'
+			redirect_to profile_path, notice: 'Your account has been updated'
 		else
 			render "profile"
 		end

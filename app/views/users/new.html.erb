@@ -10,7 +10,7 @@
 		<div class="center-form">
 		<%= form_for(@user) do |f| %>
 			<% if @user.errors.any? %>
-				<div class="alert alert-danger">
+				<div class="notice notice-danger">
 				<strong>
 				<%= pluralize(@user.errors.count, "error") %>
 				prevented you from signing up:

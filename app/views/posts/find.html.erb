@@ -5,7 +5,11 @@
 
 <%= @posts.each do |posts| %>
 	<div id="post-wrapper">
+		<% if posts.exist? %>
 		<p><%= link_to posts.title, posts %></p>
+		<% else %>
+		<% render: new %>
+		<% end %>
 	</div>
 <% end %>
 
