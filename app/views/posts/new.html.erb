@@ -3,7 +3,7 @@
 <div class="form-main">
 	<%= form_for(@post) do |f| %>
 		<p><b>Current User:</b> <%= @user.name %></p>
-		<p><b>Current Time:</b> <%= @user.created_at %></p>
+		<p><b>Current Date:</b> <%= currentDate %></p>
 		<div class="form-group">
 			<%= f.label :title %>
 			<%= f.text_field :title, class: "form-control" %>

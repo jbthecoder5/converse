@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
   get 'profile', to: 'users#edit', as: 'profile'
-  get 'users/name' => 'users#showProfile'
+  get 'users/name' => 'users#showProfile'   # not sure if I wanna map visible user profile like this
   get 'createPost', to: 'posts#new', as: 'createPost'
   get 'members', to: 'users#show', as: 'members'
   get 'allPosts', to: 'posts#index', as: 'allPosts'
