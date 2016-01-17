@@ -22,10 +22,9 @@ class UsersController < ApplicationController
 		end
 	end
 
-=begin	def findUser
-		
+	def about
+
 	end
-=end
 
 	def edit
 		@user = User.find_by_id(session[:current_user_id])

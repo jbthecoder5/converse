@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
+  get 'about', to: 'users#about', as: 'about'
   get 'profile', to: 'users#edit', as: 'profile'
   get 'users/name' => 'users#showProfile'   # not sure if I wanna map visible user profile like this
   get 'createPost', to: 'posts#new', as: 'createPost'
