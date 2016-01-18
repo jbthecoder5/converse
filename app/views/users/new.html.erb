@@ -1,51 +1,39 @@
-<!DOCTYPE html>
-	<html lang="en-us">
-		<head>	
-			<meta charset="utf-8">
-			<title>Converse - A better discussion community</title>
-		</head>
-
-		<body>
-		<div class="page-wrap">
-		<div class="center-form">
-		<%= form_for(@user) do |f| %>
-			<% if @user.errors.any? %>
-				<div class="notice notice-danger">
-				<strong>
-				<%= pluralize(@user.errors.count, "error") %>
-				prevented you from signing up:
-				</strong>
-				<ul>
-				<% @user.errors.full_messages.each do |msg| %>
-				<li><%= msg %></li>
+	<div class="page-wrap">
+			<div class="center-form">
+			<%= form_for(@user) do |f| %>
+				<% if @user.errors.any? %>
+					<div class="notice notice-danger">
+					<strong>
+					<%= pluralize(@user.errors.count, "error") %>
+					prevented you from signing up:
+					</strong>
+					<ul>
+					<% @user.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+					<% end %>
+					</ul>
+					</div>
 				<% end %>
-				</ul>
+				<div class="form-group">
+					<%= f.label :name %>
+					<%= f.text_field :name, class: "form-control" %>
 				</div>
+				<div class="form-group">
+					<%= f.label :email %>
+					<%= f.email_field :email, class: "form-control" %>
+				</div>
+				<div class="form-group">
+					<%= f.label :password %>
+					<%= f.password_field :password, class: "form-control" %>
+				</div>
+				<div class="form-group">
+					<%= f.label :password_confirmation %>
+					<%= f.password_field :password_confirmation, class: "form-control" %>
+				</div>
+				<p>
+				<%= f.submit "Create Account", class: "btn btn-primary" %>
+				<%= link_to 'Already a Member?', login_path %>
+				</p>
 			<% end %>
-			<div class="form-group">
-				<%= f.label :name %>
-				<%= f.text_field :name, class: "form-control" %>
 			</div>
-			<div class="form-group">
-				<%= f.label :email %>
-				<%= f.email_field :email, class: "form-control" %>
-			</div>
-			<div class="form-group">
-				<%= f.label :password %>
-				<%= f.password_field :password, class: "form-control" %>
-			</div>
-			<div class="form-group">
-				<%= f.label :password_confirmation %>
-				<%= f.password_field :password_confirmation, class: "form-control" %>
-			</div>
-			<p>
-			<%= f.submit "Create Account", class: "btn btn-primary" %>
-			<%= link_to 'Already a Member?', login_path %>
-			</p>
-		<% end %>
 		</div>
-		</div>
-		<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-  <label for="nav-trigger"></label>
-		</body>
-	</html>
