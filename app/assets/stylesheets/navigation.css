@@ -1,7 +1,7 @@
 
-/* Navigation Menu - Background */
+
 .navigation {
-  /* critical sizing and position styles */
+  
   width: 200px;
   height: 100%;
   position: fixed;
@@ -11,21 +11,20 @@
   left: 0;
   z-index: 0;
   
-  /* non-critical appearance styles */
   list-style: none;
   background: #111;
 }
 
-/* Navigation Menu - List items */
+
 .nav-item {
-  /* non-critical appearance styles */
+
   width: 200px;
   border-top: 1px solid #111;
   border-bottom: 1px solid #000;
 }
 
 .nav-item a {
-  /* non-critical appearance styles */
+  
   display: block;
   padding: 1em;
   background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
@@ -40,9 +39,9 @@
   background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
 }
 
-/* Site Wrapper - Everything that isn't navigation */
+
 .site-wrap {
-  /* Critical position and size styles */
+ 
   min-height: 100%;
   min-width: 100%;
   background:url('grassy-lands.jpg'); /* Needs a background or else the nav will show through */
@@ -52,7 +51,7 @@
   left: 0;
   z-index: 1;
   
-  /* non-critical apperance styles */
+ 
   padding: 4em;
   
   background-size: 100% 100%;
@@ -60,17 +59,20 @@
 }
 
 .page-wrap {
-  /* Critical position and size styles */
+  
   min-height: 100%;
   min-width: 100%;
-  background:#92D008; /* Needs a background or else the nav will show through */
+  background: rgb(216,224,222); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(216,224,222,1) 0%, rgba(174,191,188,1) 22%, rgba(153,175,171,1) 33%, rgba(142,166,162,1) 50%, rgba(130,157,152,1) 67%, rgba(78,92,90,1) 82%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(216,224,222,1) 0%,rgba(174,191,188,1) 22%,rgba(153,175,171,1) 33%,rgba(142,166,162,1) 50%,rgba(130,157,152,1) 67%,rgba(78,92,90,1) 82%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(216,224,222,1) 0%,rgba(174,191,188,1) 22%,rgba(153,175,171,1) 33%,rgba(142,166,162,1) 50%,rgba(130,157,152,1) 67%,rgba(78,92,90,1) 82%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   position: relative;
   top: 0;
   bottom: 100%;
   left: 0;
   z-index: 1;
   
-  /* non-critical apperance styles */
+  
   padding: 4em;
   
   background-size: 100% 100%;
@@ -84,26 +86,25 @@
 }
 
 .nav-trigger {
-  /* critical styles - hide the checkbox input */
+  
   position: absolute;
   clip: rect(0, 0, 0, 0);
 }
 
 label[for="nav-trigger"] {
-  /* critical positioning styles */
+
   position: fixed;
   left: 15px; top: 15px;
   z-index: 2;
   
-  /* non-critical apperance styles */
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-image: url("converse-nav-icon.png");
   background-size: contain;
 }
 
-/* Make the Magic Happen */
+
 .nav-trigger + label, .site-wrap {
   transition: left 0.2s;
 }
@@ -127,11 +128,10 @@ label[for="nav-trigger"] {
 }
 
 body {
-    /* Without this, the body has excess horizontal scroll when the menu is open */
+    
   overflow-x: hidden;
 }
 
-/* Additional non-critical styles */
 
 h1, h3, p {
   max-width: 600px;
