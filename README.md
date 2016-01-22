@@ -20,9 +20,9 @@
 
 <p>
     <a href="beta-pics/1.png"><img src="beta-pics/1.png" width="200" height ="200"></a>
-    <a href="beta-pics/2.jpg"><img src="beta-pics/2.png" width="200" height ="200"></a>
-    <a href="beta-pics/3.jpg"><img src="beta-pics/3.png" width="200" height ="200"></a>
-    <a href="beta-pics/4.jpg"><img src="beta-pics/4.png" width="200" height ="200"></a>
+    <a href="beta-pics/2.jpg"><img src="beta-pics/2.jpg" width="200" height ="200"></a>
+    <a href="beta-pics/3.jpg"><img src="beta-pics/3.jpg" width="200" height ="200"></a>
+    <a href="beta-pics/4.jpg"><img src="beta-pics/4.jpg" width="200" height ="200"></a>
     
 </p>
 
