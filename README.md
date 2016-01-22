@@ -1,4 +1,4 @@
-<h1><img src="beta-pic.png"></h1><br><br>
+<h1><img src="beta-pics/beta-pic.png"></h1><br><br>
 
 <h2>Progress Report</h2>
 <p><b>Converse is a ruby on rails web application that allows users to create a post and comment on post. Much like a forum-based web application, but with a twist. Users will be able to monetize from their posts, and donate via Bitcoin or paypal to other users. In Addition, created post that receive monetization awards will be split and allocated to post creator and users who commented on post.</b></p>
