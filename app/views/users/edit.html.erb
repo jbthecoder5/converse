@@ -1,7 +1,7 @@
 <div class="page-wrap">
 <div class="center-form">
 <%= form_for(@user) do |f| %>
-<%= image_tag @user.avatar_url.to_s if @user.avatar_url.present? %>
+	
 	<div class="form-group">
 		<%= f.label :name %>
 		<%= f.text_field :name, :value => @user.name,

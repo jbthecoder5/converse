@@ -23,7 +23,9 @@ class PostsController < ApplicationController
 		@post = Post.new(post_params)
 
 		if @post.save
-			redirect_to root_url, notice: 'Topic Successfully Posted!'
+			redirect_to posts_path, notice: 'Topic Successfully Posted!'
+		elsif @post.save == false
+			redirect_to new_post_path, notice: 'please try again'
 		else
 			render "new"
 		end

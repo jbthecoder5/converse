@@ -72,12 +72,9 @@
     width:100%;
 }
 
-#post-wrapper
+#post-wrapper .btn-primary
 {
-    max-width:100%;
-    float:left;
-    clear:both;
-    
+    margin-bottom:10px;
 }
 
 .content-holder .col

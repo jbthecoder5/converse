@@ -1,9 +1,9 @@
 	<div class="page-wrap">
-	<div class="center-form">
-	<% @posts.each do |post| %>
-		<div id="post-wrapper">
-			<%= link_to post.title, post %>
+		<div class="center-form">
+			<div id="post-wrapper">
+				<% @posts.each do |post| %>
+						<%= link_to post.title, post, class: "btn btn-primary" %>
+				<% end %>
+			</div>
 		</div>
-	<% end %>
-	</div>
 	</div>
