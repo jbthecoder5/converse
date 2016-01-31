@@ -1,13 +1,18 @@
 <div class="page-wrap">
 <div class="center-form">
-	<%= @post.title %><br>
-	<%= @post.body %>
-
+	<div class="posts-container">
+		<div class="post-title">
+			<h2><%= @post.title.capitalize %></h2>
+		</div>
+		<div class="post-body">
+			<%= @post.body %>
+		</div>
+	</div>
 	<h2>Comments</h2>
 	<%= render @post.comments %>
 
 	<% if current_user %>
-		<h4>New Comment</h4>
+		<h4>Create a comment!</h4>
 
 		<%= form_for [@post, @post.comments.build] do |f| %>
 			<div class='field'>

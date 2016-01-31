@@ -1,0 +1,27 @@
+.post-container
+{
+
+}
+
+.post-title
+{
+	background:white;
+	padding:10px;
+	text-align:center;
+	border-bottom: 3px solid black;
+	border-radius:50px;
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px;
+	-o-border-radius:50px;
+}
+
+.post-body
+{
+	background:white;
+	padding:10px;
+	text-align:center;
+	border-radius:50px;
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px;
+	-o-border-radius:50px;
+}
