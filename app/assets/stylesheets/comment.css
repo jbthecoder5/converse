@@ -11,3 +11,15 @@
 	font-weight: bold;
 	font-size:1.1em;
 }
+
+.new-com
+{
+	width:70%;
+	max-width: 70%;
+}
+
+.com-label
+{
+	color:rgba(255, 223, 229, 1);
+	
+}

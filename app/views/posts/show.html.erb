@@ -7,21 +7,21 @@
 		<div class="post-body">
 			<%= @post.body %>
 		</div>
-	</div>
+	</div><br><br><br>
 	<h2>Comments</h2>
 	<%= render @post.comments %>
 
 	<% if current_user %>
 		<h4>Create a comment!</h4>
-
+		<br>
 		<%= form_for [@post, @post.comments.build] do |f| %>
 			<div class='field'>
-				<%= f.label :author %><br>
+				<%= f.label "Current user", class: "com-label" %><br>
 				<%= f.text_field :author, :value => @user.name, :readonly => true %>
 			</div>
 			<div class='field'>
-				<%= f.label :body %><br>
-				<%= f.text_area :body %>
+				<%= f.label "Comment", class: "com-label" %><br>
+				<%= f.text_area :body, class: "new-com" %>
 			</div>
 				<div class='actions'>
 				<%= f.submit %>
