@@ -1,10 +1,16 @@
+ruby '2.3.0'
+
 source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '1.3.11'
+gem 'sqlite3', '1.3.11', group: [:test, :development]
+
+gem 'pg', group: :production
+gem 'rails_12factor', group: :production
+
 # refile gem for picture upload
 gem "refile", require: "refile/rails"
 gem "refile-mini_magick"
