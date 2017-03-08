@@ -10,6 +10,7 @@ gem 'sqlite3', '1.3.11', group: [:test, :development]
 
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production
+gem 'bootstrap-sass', '~> 3.3.6'
 
 # refile gem for picture upload
 gem "refile", require: "refile/rails"

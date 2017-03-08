@@ -87,7 +87,7 @@
 
 .welcome-holder
 {
-    
+
 }
 
 .div-message
@@ -122,7 +122,7 @@ p .div-message
 {
     padding-right:5.5%;
     margin-right: 10%;
-}   
+}
 
 .col .div-message:hover, .div-message:active
 {
@@ -135,8 +135,8 @@ p .div-message
 .col .div-message a:active,
 .col .div-message a:focus
 {
-    color#D8ECDD;
-    text-decoration: none
+    color: #D8ECDD;
+    text-decoration: none;
 }
 
 .member-array
@@ -154,7 +154,7 @@ p .div-message
     -o-border-radius: 10px 10px;
     width:50%;
     margin:0px auto;
-    color:rgba(153, 204, 153, 1));
+    color:rgba(153, 204, 153, 1);
     background:rgba(216, 236, 221, 1);
 }
 
@@ -182,7 +182,7 @@ p .div-message
 
 .social-icons
 {
-   
+
 }
 
 
@@ -216,4 +216,3 @@ p .div-message
     height:32px;
     float:left;
 }
-
